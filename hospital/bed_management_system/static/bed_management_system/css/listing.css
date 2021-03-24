@@ -1,0 +1,356 @@
+.listing-section h1 {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.listing-section .listing-header .sorting-area {
+    font-size: 13px;
+    color: #777;
+}
+
+.listing-section .listing-header .sorting-area .form-select {
+    width: 100px;
+    margin: 0 8px;
+}
+
+.search-area .search {
+    display: inline-block;
+    margin: 0 12px 0 0;
+    width: 300px;
+}
+
+.search-area .search .form-control {
+    height: 38px;
+}
+
+.listing-section .card {
+    overflow: hidden;
+}
+
+.listing .table {
+    vertical-align: middle;
+    margin: 0;
+}
+
+.listing .table .table-head {
+    background: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, .7));
+}
+
+.listing .table .table-head th {
+    padding-left: 28px;
+    color: #fff;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.listing .table .table-head th input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
+
+.listing .table .table-head th span {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 23px);
+}
+
+.listing .table tbody td {
+    padding: 6px 28px;
+    color: #6e6b7b;
+    font-size: 0.8rem;
+}
+
+.property-details {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.property-details input[type="checkbox"] {
+    margin: 0px 10px 0 0;
+}
+
+.property-details strong {
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #7367f0;
+}
+
+.property-details span {
+    font-size: 0.8rem;
+    color: #b9b9c3;
+}
+
+.owner-details {
+    display: block;
+    width: 100%;
+}
+
+.owner-details strong {
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.owner-details span {
+    display: block;
+    width: 100%;
+    color: #b9b9c3;
+    font-size: 0.8rem;
+}
+
+.actions {
+    display: block;
+    width: 100%;
+}
+
+.actions .actions-dropdown {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.actions .actions-dropdown .actions-dropdown-btn {
+    background: none;
+    border: none;
+    font-size: 17px;
+    color: #888;
+    padding: 6px 30px;
+    outline: none;
+}
+
+.actions .actions-dropdown .dropdown-menu {
+    right: 100% !important;
+    left: auto;
+    box-shadow: 0 5px 25px rgba(34, 41, 47, .1);
+    border: 1px solid rgba(34, 41, 47, .05);
+    z-index: 100;
+    top: -40px;
+}
+
+.actions .actions-dropdown .dropdown-menu.up {
+    bottom: 100%;
+    top: auto;
+}
+
+.actions .actions-dropdown .dropdown-menu li {
+    display: block;
+    width: 100%;
+}
+
+.actions .actions-dropdown .dropdown-menu li a {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 0.85rem;
+    color: #6e6b7b;
+}
+
+.actions .actions-dropdown .dropdown-menu li a:hover {
+    background: rgba(115, 103, 240, .12);
+    color: #7367f0;
+}
+
+.actions .actions-dropdown .dropdown-menu li a .fa {
+    margin: 0 10px 0 0;
+    font-size: 0.8rem;
+}
+
+.actions .action-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.actions .action-icon a {
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    padding: 0 5px;
+}
+
+.actions .action-icon a:hover {
+    color: #666 !important;
+}
+
+td.user-role {
+    width: 20%;
+}
+
+.add-form-btn {
+    color: #fff;
+    font-size: 24px;
+}
+
+.add-form-btn:hover {
+    color: #fff;
+}
+
+.property-listing .card {
+    overflow: visible;
+}
+
+.property-listing .card .listing {
+    overflow: visible;
+}
+
+/* Pagination starts here */
+.pagination-area {
+    padding: 15px 0;
+}
+
+.pagination-area .total-count {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.pagination-area .pagination {
+    margin: 0;
+}
+
+.float-right {
+    float: right
+}
+
+.text-center {
+    text-align: center
+}
+
+/* Pagination Ends here */
+
+.floating-div {
+    top: 50%;
+    right: -100%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    padding: 30px 0;
+    transition: all ease 0.5s;
+}
+
+.floating-div.show {
+    right: 0;
+    transition: all ease 0.3s;
+}
+
+.floating-div label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 0 12px 0;
+}
+
+.floating-div .btn-link {
+    color: #fff;
+    margin: 4px 0 0 0;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.floating-div .close {
+    position: absolute;
+    top: -4px;
+    right: 14px;
+    color: #fff;
+    font-size: 32px;
+}
+
+/* Property Details Popup CSS starts here */
+.property-details-popup .details {
+    max-height: 500px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.property-details-popup .details::-webkit-scrollbar,
+.property-details-popup iframe::-webkit-scrollbar {
+    display: none;
+}
+
+.property-details-popup .details,
+.property-details-popup iframe {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    position: relative;
+}
+
+.property-details-popup iframe {
+    height: 550px;
+}
+
+.property-details-popup iframe body {
+    background: transparent;
+}
+
+/* Property Details Popup CSS Ends here */
+
+/* User Roles POpup CSS starts here */
+.user-roles-popup .user-roles {
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.user-roles-popup .user-roles li {
+    display: inline-block;
+    border: 1px solid #7367f0;
+    margin: 0 5px 7px 0;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: #7367f0;
+    font-weight: 600;
+    transition: all ease 0.5s;
+    cursor: default;
+}
+
+.user-roles-popup .user-roles li:hover{
+    transition: all ease 0.5s;
+    background: #7367f0;
+    color: #fff;
+}
+
+/* User Roles POpup CSS Ends here */
+
+/* Responsive CSS starts here */
+@media only screen and (max-width:768px) {
+    .property-details-popup .modal-dialog {
+        max-width: 95%;
+    }
+}
+
+.user-roles-popup .main-heading {
+    font-size: 1rem;
+    color: #7367f0;
+    margin: 0 0 6px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.user-roles-popup .secondary-heading{
+    color: #333;
+    font-size: 1rem;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.user-roles-popup .secondary-title {
+    font-size: 0.9rem;
+}
+/* Responsive CSS Ends here */

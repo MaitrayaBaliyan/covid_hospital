@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>COVID Hospital - Admin Panel</title>
+
+    <link rel="stylesheet" href="/static/bed_management_system/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="/static/bed_management_system/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/bed_management_system/css/font-awesome.min.css">
+    
+	<link rel="stylesheet" href="/static/bed_management_system/css/common.css">
+	<link rel="stylesheet" href="/static/bed_management_system/css/form.css">
+	<link rel="stylesheet" href="/static/bed_management_system/css/listing.css">
+    <link rel="stylesheet" href="/static/bed_management_system/css/header.css">
+	<script>
+		function closePopup(id){
+			document.getElementById(id).style.display = "none";
+		}
+	</script>
+</head>
+
+<body>
+
+    {% include 'bed_management_system/components/header.html' %}
+
+	<!-- Form Section Component Starts here -->
+	{% include "bed_management_system/components/forms.html" %}
+	<!-- Form Section Component Ends here -->
+
+	<!-- Listing Component Starts here -->
+	{% include "bed_management_system/components/listing.html" %}
+	<!-- Listing Component Ends here -->
+
+	    <!-- Notification Popup Starts here -->
+    {% if messages %}
+    <div class="modal" style="display:block" id="notificationPopup">
+        {% else %}
+        <div class="modal" id="notificationPopup">
+            {% endif %}
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4">
+                    <a href="javascript:void(0);" class="close" onclick="closePopup('notificationPopup')">&times;</a>
+                    {% if messages %}
+                    {% for message in messages %}
+                    {% if message.tags == 'success' %}
+                    <h5 id="notificationPopupHeader" class="text-center text-success">Success Message</h5>
+                    {% elif message.tags == 'info' %}
+                    <h5 id="notificationPopupHeader" class="text-center text-info">Info Message</h5>
+                    {% else %}
+                    <h5 id="notificationPopupHeader" class="text-center text-danger">Error Message</h5>
+                    {% endif %}
+                    <p id="notificationPopupText" class="text-center">{{message|safe}}</p>
+                    {% if message.extra_tags == 'GOBACK' %}
+                    <p class="text-center"><a href="javascript:void(0);" onclick="history.back();">Go Back</a></p>
+                    {% endif %}
+                    {% endfor %}
+                    {% else %}
+                    <h5 id="notificationPopupHeader" class="text-center text-info">Success Message</h5>
+                    <p id="notificationPopupText" class="text-center">This is alert</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <!-- Notification Popup Ends here -->
+
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+@import url('./fonts.css');
+
+* {
+    outline: none;
+}
+
+body {
+    background: #f8f8f8;
+    font-family: 'Montserrat', Helvetica, Arial, serif;
+    font-size: 14px;
+    color: #484848;
+}
+
+body.bg-overlay {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 997;
+    display: none;
+}
+
+.app-content {
+    margin-left: 210px;
+    padding: 0 15px;
+    transition: all ease 0.2s;
+}
+
+.app-content.full-width {
+    margin-left: 90px;
+    transition: all ease 0.2s;
+}
+
+.card {
+    box-shadow: 0 4px 24px 0 rgba(34, 41, 47, .1);
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 7px;
+}
+
+.card-title {
+    font-size: 1.05rem;
+    color: #666;
+}
+
+.card.multi-form-card {
+    opacity: 0.7;
+    transition: all ease 0.5;
+}
+
+.card.multi-form-card:hover {
+    opacity: 1;
+    transition: all ease 0.5;
+}
+
+.form-control {
+    color: #666;
+    font-size: 0.9rem;
+    padding: 3px;
+}
+
+.form-select {
+    padding: 3px;
+}
+
+.form-control::placeholder {
+    color: #999;
+}
+
+.btn {
+    font-family: arial;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: #7367f0;
+    border-color: #7367f0;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    box-shadow: 0 8px 25px -8px #7367f0;
+    background: #7367f0;
+    border-color: #7367f0;
+}
+
+.btn-outline-primary {
+    color: #7367f0;
+    border-color: #7367f0;
+}
+
+.btn-outline-primary:hover {
+    background: #7367f0;
+    border-color: #7367f0;
+    box-shadow: 0 8px 25px -8px #7367f0;
+    color: #fff;
+}
+
+.form-check-input:checked {
+    background-color: #7367f0;
+    border-color: #7367f0;
+}
+
+.btn-check:checked~.btn-outline-primary {
+    background: #7367f0;
+    border-color: #7367f0;
+    box-shadow: 0 8px 25px -8px #7367f0;
+    color: #fff;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.table {
+    margin: 0;
+}
+
+/* Total Entries CSS starts Here */
+.total-entries span {
+    display: inline-block;
+    font-weight: 600;
+    color: #666;
+}
+
+.total-entries span i {
+    font-style: normal;
+}
+
+/* Total Entries CSS ends Here */
+
+
+/* Notification Popup Css */
+.modal {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal .modal-content .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    line-height: 25px;
+    padding: 5px 10px;
+    color: #999;
+}
+
+/* Calculator Popup Starts Here */
+.calculator-popup .modal-content {
+    overflow: hidden;
+}
+
+.calculator-popup .modal-content h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    padding: 15px 0;
+    color: #666;
+}
+
+.calculator-container {
+    display: block;
+    width: 100%;
+}
+
+/* Calculator Popup Ends Here */
+
+/* Responsive CSS starts Here */
+@media only screen and (max-width:1024px) {
+    .app-content {
+        margin-left: 0;
+        padding: 100px 10px 0;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .card-body {
+        padding: 0.6rem;
+    }
+}
+
+/* Responsive CSS Ends Here */
+
+.select2-selection__clear {
+    padding-right: 10px !important;
+    padding-top: 6px !important;
+}

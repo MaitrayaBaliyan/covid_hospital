@@ -1,0 +1,32 @@
+<!-- Header HTML Starts here -->
+<header class="header">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="user-details-container">
+                        <div class="user-role">
+                            <strong>COVID Hospital Management System</strong>
+                        </div>
+                        <div class="menubar-toggle-mobile" id="menuToggleBtnSm">
+                        </div>
+                        <div class="right-section d-flex align-items-center">
+                            <div class="user-details">
+                                <div class="content">
+                                    <strong>{{request.user.username|title}}</strong>
+                                    <a href="{% url 'user_logout' %}" title="Logout"> <span>Logout</span> </a>
+                                </div>
+                                <div class="user-image">
+                                    <strong id="userOptions">
+                                        <i class="fa fa-user-o"></i>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header HTML Ends here -->

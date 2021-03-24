@@ -1,0 +1,77 @@
+<div class="listing-section header d-block w-100 property-listing">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <a href="{% url 'list_status' 'NOT_FREE' %}" class="btn btn-dark mb-2">All Patients</a>
+                    <a href="{% url 'list' 'Semi-Private' 'NOT_FREE' %}" class="btn btn-info mb-2 float-right">Patients (Semi-Private Bed)</a>
+                    <a href="{% url 'list' 'Private' 'NOT_FREE' %}" class="btn btn-info mb-2 float-right" style="margin-left:3px;margin-right:3px">Patients (Private Bed)</a>
+                    <a href="{% url 'list' 'General' 'NOT_FREE' %}" class="btn btn-info mb-2 float-right">Patients (General Bed)</a>
+                    <a href="{% url 'list_status' 'FREE' %}" class="btn btn-success mb-2">Available Beds</a>
+                    <a href="{% url 'list_all' %}" class="btn btn-secondary mb-2">All Beds</a>
+                    <div class="listing table-responsive d-block w-100">
+                        <table class="table">
+                            <thead class="table-head">
+                                <tr>
+                                    <th>Bed Number</th>
+                                    <th>Bed Type</th>
+                                    <th>Availability</th>
+                                    <th>Patient Name</th>
+                                    <th>Bed Occupied / Free On</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="propListContainer">
+                                {% for data in searched_data %}
+                                <tr>
+                                    <td><strong>{{data.id}}</strong></td>
+                                    <td><strong>{{data.type}}</strong></td>
+                                    <td><strong>{{data.status}}</strong></td>
+                                    {% if data.patient_name %}
+                                        <td><strong>{{data.patient_name}}</strong></td>
+                                    {% else %}
+                                        <td>--</td>
+                                    {% endif %}
+                                    <td><strong>{{data.alloted_on}}</strong></td>
+                                    {% if data.status == 'FREE' %}
+                                        <td><strong>--</strong></td>
+                                    {% else %}
+                                        <td><button type="submit" value="{{data.id}}" class="btn btn-success btn-sm" onclick='confirmForm({{data.id}})' >Discarge</button></td>
+                                    {% endif %}
+                                </tr>
+                                {% endfor %}
+
+                                {% if not searched_data %}
+                                    <tr><td colspan="6" align="center"></td></tr>
+                                    <tr><td colspan="6" align="center">No Data Found</td></tr>
+                                {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="confirmation">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4">
+            <a href="javascript:void(0);" class="close" onclick="closePopup('confirmation')">&times;</a>
+            <h5 id="confirmationHeader" class="text-center text-info">Confirm Message</h5>
+            <button type="submit" class="btn btn-success btn-sm" onclick="submitForm()">Confirm Discarge</button>
+            <button type="submit" class="btn btn-danger btn-sm mt-4" onclick="closePopup('confirmation')">Cancle</button>
+        </div>
+    </div>
+</div>
+<form method="post" action="{% url 'discharge' %}" id="discargeForm">
+    <input type="hidden" id="discargeFormHidden" name="bed_id" value="">
+</form>
+<script>
+function confirmForm(id){
+    document.getElementById("discargeFormHidden").value=id
+    document.getElementById("confirmation").style.display = "block";
+}
+function submitForm(){
+    document.getElementById("discargeForm").submit();
+}
+</script>

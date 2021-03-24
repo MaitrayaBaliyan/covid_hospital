@@ -1,0 +1,299 @@
+.form-section h1 {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form-section .form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-section .form-group label {
+    font-size: 0.75rem;
+    margin: 0 0 3px 0;
+    color: #666;
+    display: block;
+    width: 100%;
+}
+
+span.error {
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    font-size: 0.625rem;
+    color: #ff0000;
+}
+
+.form-section .form-check label {
+    font-size: 0.85rem;
+}
+
+.form-section .form-group .form-select {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.input-checkbox {
+    margin: 5px 0 0 0;
+}
+
+.input-checkbox label {
+    color: #7367f0;
+}
+
+.btn-section {
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.search-btn-section {
+    text-align: center;
+}
+
+.addition-field-action {
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.or-text {
+    font-size: 20px;
+    color: #888;
+    font-weight: 600;
+}
+
+.additional-area-details {
+    border-top: 1px solid #ebe9f1;
+}
+
+.form-section .form-group .input-group .form-select:disabled {
+    cursor: default;
+}
+
+.form-section .form-group .input-group .form-select {
+    position: absolute;
+    top: 0;
+    right: -2px;
+    width: 28%;
+    border-top-right-radius: .25rem !important;
+    border-bottom-right-radius: .25rem !important;
+    background: #7367f0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-section .form-group .input-group .form-select.left {
+    right: auto;
+    left: -2px;
+    z-index: 10;
+    border-top-left-radius: .25rem !important;
+    border-bottom-left-radius: .25rem !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.form-section .form-group .input-group .form-select~.select-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-top: 6px solid #fff;
+    transform: translateY(-50%);
+}
+
+.form-section .form-group .input-group .form-select.left~.select-arrow {
+    left: 69px;
+    right: auto;
+    z-index: 11;
+}
+
+.input-group .form-select option {
+    background: #fff;
+    color: #000;
+}
+
+.select2-container .select2-selection--single {
+    /*height: 26px;*/
+    border: 1px solid #ced4da;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-top: 0px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    /*height: 26px;*/
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-width: 2px;
+    border-color: #343a40;
+    width: 8px;
+    height: 8px;
+    border-top-width: 0;
+    border-left-width: 0;
+    transform: translateY(-50%) rotate(45deg);
+    left: 0;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-width: 2px;
+    border-color: #343a40;
+    width: 8px;
+    height: 8px;
+    border-top-width: 0;
+    border-left-width: 0;
+    transform: translateY(-50%) rotate(45deg);
+    left: 0;
+}
+
+.add-field-container {
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.form-section .form-group label.btn-outline-primary {
+    color: #7367f0;
+}
+
+.form-section .form-group .btn-check:checked~label.btn-outline-primary {
+    color: #fff;
+}
+
+.form-section .form-group label.btn-outline-primary:hover {
+    color: #fff;
+}
+
+.form-section .form-group .btn-check:checked~label.btn-outline-primary:hover{
+    background: transparent;
+    color: #7367f0;
+}
+
+.form-section .form-group .form-check label {
+    margin: 0;
+}
+
+.form-section .form-group label.custom-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.form-section .form-group label.btn-outline-primary.custom-width {
+    width: 70%;
+}
+
+.form-section .form-group label sup {
+    font-size: 1rem;
+    top: -1px;
+}
+
+.input-group.left-select .form-control {
+    padding-left: 100px;
+}
+
+.tags-section .form-group .form-check {
+    padding-left: 0;
+}
+
+.tags-section .card .card-title {
+    cursor: pointer;
+}
+
+.tags-section .card .searchOptions {
+    display: none;
+}
+
+.tags-section .card .searchOptions.show {
+    display: flex;
+}
+
+.property-badges .btn {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    margin: 0 5px 0 0;
+}
+
+.price-area {
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.add-field-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.add-field-btns span {
+    font-size: 32px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+
+.additional-floor-area-details {
+    display: block;
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 10px 10px 0px;
+    border-top: 1px solid #eee;
+    background: #e8e8e8;
+    border-radius: 7px;
+    position: relative;
+}
+
+.additional-floor-area-details .delete-icon {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.floor-card{
+    max-height: 510px;
+    overflow-y: auto;
+}
+
+/* Responsive CSS starts Here */
+@media only screen and (min-width: 1400px) {
+    .form-section .form-group .input-group .form-select {
+        width: 80px;
+    }
+
+    .form-section .form-group .input-group .form-select.left~.select-arrow {
+        left: 55px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .form-section .form-group label.btn-outline-primary.custom-width {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .form-section .form-group label.btn-outline-primary.custom-width {
+        width: 100%;
+    }
+
+    .form-section .form-check label {
+        font-size: 0.75rem;
+    }
+
+    .form-section .form-group .input-group .form-select {
+        width: 90px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .additional-details-form .form-group .form-control {
+        margin: 10px 0 0 0;
+    }
+}
+
+/* Responsive CSS ends Here */

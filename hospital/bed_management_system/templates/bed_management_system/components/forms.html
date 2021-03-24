@@ -1,0 +1,60 @@
+            <div class=" header tags-section form-section d-block w-100">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3 d-flex justify-content-between">Form Section</h5>
+                                    <form action="{% url 'allocatement' %}" method="post">
+                                <div class="row border-top pt-4 border-light searchOptions show">
+                                    <div class="col-5">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <input type="text" name="patient_name" value="" class="form-control additional-elements" placeholder="Patient name" required>
+                                                </div>
+                                                <div class="col-6">
+                                                    <select name="bed_type" id="bedType" class="form-select" required>
+                                                        <option value="">--Select Bed Type--</option>
+                                                        <option value="General">General</option>
+                                                        <option value="Private">Private</option>
+                                                        <option value="Semi-Private">Semi-Private</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                             <div class="col-12">
+                                                <div class="search-btn-section d-block w-100">
+                                                    <button type="submit" class="btn btn-primary">Allotment</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    </form>
+
+                                <div class="col-4">
+                                </div>
+                                <div class="col-3">
+                                    <form action="{% url 'check_status' %}" method="POST">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <input type="number" name="bed_id" value="" class="form-control additional-elements" placeholder="Bed Number" required>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                             <div class="col-12">
+                                                <div class="search-btn-section d-block w-100">
+                                                    <button type="submit" name="direct_search" value="1" class="btn btn-primary">Check Status</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,301 @@
+.header {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin: 18px 0 0 0px;
+    transition: all ease 0.2s;
+    padding: 0 15px;
+}
+
+.header.full-width {
+    margin-left: 90px;
+    transition: all ease 0.2s;
+}
+
+.header .card-body {
+    padding: 0.6rem 1rem;
+}
+
+.header .user-details-container {
+    display: flex;
+    width: 100%;
+    text-align: right;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .user-details-container .user-role {
+    display: inline-block;
+}
+
+.header .user-details-container .user-role .badge {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.header .user-details-container .menubar-toggle-mobile {
+    display: none;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 20px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.header .user-details-container .menubar-toggle-mobile span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #7367f0;
+    border-radius: 20px;
+}
+
+.header .user-details-container .menubar-toggle-mobile span:nth-child(2) {
+    width: 80%;
+    transition: all ease 0.3s;
+}
+
+.header .user-details-container .menubar-toggle-mobile:hover span:nth-child(2) {
+    width: 100%;
+    transition: all ease 0.3s;
+}
+
+.header .user-details-container .user-details {
+    display: inline-flex;
+    align-items: center;
+}
+
+.header .user-details-container .user-details .content {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.header .user-details-container .user-details .content strong {
+    display: block;
+    width: 100%;
+    color: #6e6b7b;
+    font-size: 0.9rem;
+}
+
+.header .user-details-container .user-details .content span {
+    display: block;
+    width: 100%;
+    font-size: 0.75rem;
+    color: #afafaf;
+}
+
+.header .user-details-container .user-details .user-image {
+    display: inline-block;
+    position: relative;
+}
+
+.header .user-details-container .user-details .user-image strong {
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background: #7367f0;
+}
+
+.header .user-details-container .user-details .user-image strong i {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+}
+
+.header .user-details-container .user-details .dropdown-menu {
+    right: 0 !important;
+    left: auto;
+    margin: 12px 0 0 0;
+}
+
+.header .user-details-container .user-details .dropdown-menu li {
+    display: block;
+    width: 100%;
+}
+
+.header .user-details-container .user-details .dropdown-menu li a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 8px 15px;
+    color: #625f6e;
+}
+
+.header .user-details-container .user-details .dropdown-menu li a:hover {
+    background: rgba(115, 103, 240, .12);
+    color: #7367f0;
+}
+
+.header .user-details-container .user-details .dropdown-menu li a i {
+    margin: 0 6px 0 0;
+    font-size: 16px;
+}
+
+.header .user-details-container .user-details .dropdown-menu li a span {
+    flex: 1;
+    height: auto;
+    overflow: visible;
+    border-radius: 0;
+    font-size: 0.85rem;
+}
+
+.notification-section {
+    display: inline-block;
+    margin: 0 15px 0 0;
+    position: relative;
+}
+
+.notification-section .fa {
+    display: inline-block;
+    font-size: 20px;
+    color: #888;
+    cursor: pointer;
+}
+
+.notification-section .notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background: #dc3545;
+    color: #fff;
+    font-size: 9px;
+    width: 15px;
+    height: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.notification-section .dropdown-menu {
+    left: auto;
+    right: 0 !important;
+    width: 250px;
+    border-radius: 2px;
+    padding: 0;
+}
+
+.notification-section .dropdown-menu .top-bar {
+    font-size: 13px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 8px 10px;
+}
+
+.notification-section .dropdown-menu .top-bar strong {
+    display: inline-block;
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.notification-section .dropdown-menu .top-bar a {
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+}
+
+.notification-section .dropdown-menu .top-bar a:hover {
+    text-decoration: underline;
+}
+
+.notification-section .dropdown-menu .notification {
+    display: block;
+    width: 100%;
+}
+
+.notification-section .dropdown-menu .notification ul {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.notification-section .dropdown-menu .notification ul li {
+    display: block;
+    width: 100%;
+}
+
+.notification-section .dropdown-menu .notification ul li a {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.notification-section .dropdown-menu .notification ul li a:hover {
+    background: #f5f5f5;
+}
+
+.notification-section .dropdown-menu .notification ul li a label {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    color: #666;
+    cursor: pointer;
+}
+
+.notification-section .dropdown-menu .notification ul li a i {
+    display: block;
+    width: 100%;
+    font-style: normal;
+    color: #888;
+    font-size: 11px;
+}
+
+/* Responsive CSS Starts Here */
+@media only screen and (max-width:1024px) {
+    .header {
+        margin: 18px 0 0 0;
+        padding: 0 10px;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .header .user-details-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .user-details-container .menubar-toggle-mobile {
+        display: inline-flex;
+        margin: 0 0 0 5px;
+    }
+
+    .header .user-details-container .user-role {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .header .card-body {
+        padding: 0.6rem;
+    }
+
+    .header .user-details-container .user-details .content span {
+        font-size: 0.65rem;
+    }
+
+    .header .user-details-container .user-details .user-image strong {
+        width: 35px;
+        height: 35px;
+    }
+
+    .header .user-details-container .user-details .user-image strong i {
+        font-size: 20px;
+    }
+}
+
+/* Responsive CSS Ends Here */
